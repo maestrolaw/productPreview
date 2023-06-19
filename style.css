@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+
+.product img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+.box {
+    width: 65vh;
+    height: 50vh;
+    /* margin-right: 0;
+    margin-bottom: px;
+    padding-top: 30px;
+     */
+}
+
+.box .perf {
+    font-family: "montserrat";
+    margin-right: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: hsl(230, 13%, 63%);
+}
+
+.gab {
+    font-family: "fraunces";
+    margin-right: 10px;
+    padding-top: 20px;
+
+}
+
+.box .description {
+    font-family: "montserrat";
+    padding-top: 2px;
+    font-size: 14px;
+    line-height: 22px;
+    color: hsl(228, 12%, 48%);
+
+}
+
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pricing p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.pricing span {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+
+}
+
+.doll {
+    font-family: "fraunces";
+    color: hsl(158, 36%, 37%);
+    font-size: x-large;
+
+}
+
+.slashed {
+    font-family: "montserrat";
+
+    display: flex;
+    color: hsl(228, 12%, 48%);
+}
+
+.cart {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 white;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.cart:hover {
+    background-color: hsl(158, 36%, 37%);
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .container{
+        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        /* margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        width: 98%; */
+
+    }
+
+
+    .product img{
+        content: url(./images/image-product-mobile.jpg);
+        /* padding-left: 40x;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        margin-left: 2px; */
+
+    }
+
+    .container{
+        flex-direction: column;
+        
+    }
+
+    
+
+
+}
+    
